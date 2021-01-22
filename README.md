@@ -9,7 +9,7 @@ This is my custom project template for starting any new pygame projects. It is b
 Python 3.x
 pygame
 
-## How to use
-Clone repo   
+## How to use  
+Download repo   
 Implement scenes   
 Run `Main.py`
