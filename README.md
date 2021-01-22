@@ -6,10 +6,10 @@ This is my custom project template for starting any new pygame projects. It is b
 `Imgs` folder is there to hold any custom images that are required for the game to run properly.   
 
 ## Requirements
-Python 3.x
+Python 3.x   
 pygame
 
-## How to use  
+## How to use
 Download repo   
 Implement scenes   
 Run `Main.py`
