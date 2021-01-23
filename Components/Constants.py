@@ -11,6 +11,9 @@ WIN_HEIGHT = 600
 
 # Colours
 
+# Paths
+
+# Images
 
 # Fonts
 
