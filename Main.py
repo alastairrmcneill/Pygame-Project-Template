@@ -16,7 +16,7 @@ def main():
     manager.setup_scenes(scene_dict, starting_scene)
 
     while running:
-        clock.tick(60)
+        clock.tick(manager.FPS)
 
         if manager.scene.done:
             manager.swap_scenes()

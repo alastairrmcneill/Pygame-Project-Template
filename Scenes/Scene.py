@@ -10,6 +10,7 @@ class Scene:
         self.done = False
         self.next = None
         self.previous = None
+        self.manager = None
         self.persist = {}
 
     def startup(self, persist):
