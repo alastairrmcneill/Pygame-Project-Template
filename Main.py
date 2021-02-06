@@ -1,5 +1,5 @@
 import pygame
-from Scenes.Manager import Manager
+from Utilities.Manager import Manager
 from Components.Constants import WIN_WIDTH, WIN_HEIGHT
 
 WIN = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
