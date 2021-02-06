@@ -1,3 +1,8 @@
+"""
+Camera class used to follow the player around the map.
+
+Apply camera offset to all sprites on the screen that need to be moved
+"""
 import pygame
 from Components.Constants import WIN_WIDTH, WIN_HEIGHT
 
@@ -8,6 +13,12 @@ class Camera:
         self.reset(player)
 
     def reset(self, player):
+        """
+        Resets the camera object to follow the player
+        Arguments:
+            player {Player} -- Player to follow
+        """
+
         self.player = player
         self.offset = vec(0,0)
         self.offset_float = vec(0,0)
@@ -17,6 +28,11 @@ class Camera:
         self.border = (0, player.world.width, 0, player.world.height)
 
     def scroll(self):
+        """
+        Checks the difference in camera and player position
+        Updates the camera to follow the player with a slight lag
+        """
+
         self.offset_float.x += (self.player.rect.x - self.offset_float.x + self.constant.x) * 0.1
         self.offset_float.y += (self.player.rect.y - self.offset_float.y + self.constant.y) * 0.1
 
